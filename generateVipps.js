@@ -30,7 +30,7 @@ const generateVipps = async (kr1, msg1, navn1, nr1, fake1) => {
 }
 
     // write in text
-    ctx.fillStyle = "gray"
+    ctx.fillStyle = "grey"
     ctx.textAlign = "center"
 
     // draw in the nr
