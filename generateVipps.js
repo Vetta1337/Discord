@@ -11,8 +11,8 @@ const dim = {
 
 const generateVipps = async (kr1, msg1, navn1, nr1, fake1) => {
     let kr = kr1
-    let msg = msg1
-    let navn = navn1.replace("-"," ")
+    let msg = msg1.replace(/-/g," ")
+    let navn = navn1.replace(/-/g," ")
     let nr = nr1
   
     const canvas = Canvas.createCanvas(dim.width, dim.height)
