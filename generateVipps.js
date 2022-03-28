@@ -55,12 +55,16 @@ const generateVipps = async (kr1, msg1, navn1, nr1, fake1) => {
     ctx.fillText(`${msg}`, dim.width/2, 900)
 
    // draw in name
-   ctx.font = "60px Sans"
-   ctx.fillText(`${navn}`, dim.width/2, 400)
+   console.log("Navn: " + navn.length)
+   if(nr <= 20) {
+    ctx.fillText(`${navn}`, dim.width/2, 400)
+    ctx.font = "60px Sans"
+   } else {
+    ctx.fillText(`${navn}`, dim.width/2, 400)
+    ctx.font = "30px Sans"
 
+   }
 
-    
- 
     ctx.save()
     ctx.restore()
 
